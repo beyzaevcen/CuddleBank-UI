@@ -1,5 +1,21 @@
-.Header {
-
+.title {
     display: flex;
+    justify-content: space-between;
     gap: 50px;
+}
+
+.title>h1 {
+
+
+    color: rgb(183, 108, 178);
+}
+
+.body {
+    display: inline-block;
+    width: 33%;
+    background-color: antiquewhite;
+}
+
+.body>.firstpart {
+    border: 3px dashed grey;
 }
