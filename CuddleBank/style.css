@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container {
+    margin-top: 36px;
+
+
+    width: 96%;
+    margin-left: 36px;
+    margin-right: 36px;
+
+
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .title {
+    display: flex;
+}
+
+header .description {
+    width: 400px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    gap: 24px;
+    color: black;
+    font-weight: 700;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*Main*/
+
+main {
+    margin-top: 72px;
+    gap: 24px;
+    display: grid;
+    grid-template-areas:
+        "stocked-market news-body applications"
+        "product-services  product-services  product-services";
+
+}
+
+section#stocked-market {
+    grid-area: stocked-market;
+
+}
+
+section#news-body {
+    grid-area: news-body;
+
+
+}
+
+section#applications {
+    grid-area: applications;
+
+}
+
+section#products-and-services {
+    grid-area: product-services;
+
+
+}
