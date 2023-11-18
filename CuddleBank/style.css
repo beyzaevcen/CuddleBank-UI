@@ -2,21 +2,24 @@
     box-sizing: border-box;
 }
 
-body {
+:root {
+    --light-prple: #F1E3EE;
+    --light-blue: #DEF4FF;
+    --dark-white: #e2ebf3;
+}
 
+
+
+body {
     font-size: 15px;
     line-height: 1.5;
 }
 
 .container {
-    margin-top: 36px;
-
-
+    margin-top: 16px;
     width: 96%;
     margin-left: 36px;
     margin-right: 36px;
-
-
 }
 
 
@@ -38,6 +41,8 @@ header .description {
     font-weight: 700;
 
 }
+
+/*navbar*/
 
 nav {
     flex: 1;
@@ -61,31 +66,103 @@ a {
 main {
     margin-top: 72px;
     gap: 24px;
-    display: grid;
-    grid-template-areas:
-        "stocked-market news-body applications"
-        "product-services  product-services  product-services";
+
 
 }
+
+main .main-body-area {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    /* height: 100vh; */
+}
+
+/*stocked-market*/
 
 section#stocked-market {
-    grid-area: stocked-market;
+    flex: 1;
 
 }
+
+section#stocked-market .market-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0.5;
+}
+
+section#stocked-market .market-item .market-item-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section#stocked-market .market-item .market-item-sale {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+/*news-body*/
 
 section#news-body {
-    grid-area: news-body;
-
-
+    /* background-color: var(--light-prple); */
+    flex: 2;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    border-style: ridge;
+    border-color: var(--light-prple);
+    border-radius: 12px;
 }
+
+section#news-body button {
+    background-color: var(--light-prple);
+    border-radius: 12px;
+    border-color: var(--light-prple);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 4px;
+}
+
+
+/*Applications*/
 
 section#applications {
-    grid-area: applications;
+    flex: 1
+}
+
+section#applications .application-item {
+    border-style: solid;
+    border-color: var(--dark-white);
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 16px;
 
 }
+
+
+section#applications .application-item img {
+    max-height: 100px;
+
+}
+
+section#applications .application-item p {
+    padding-left: 16px;
+}
+
+
+
 
 section#products-and-services {
     grid-area: product-services;
+
 
 
 }
