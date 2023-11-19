@@ -1,3 +1,4 @@
+/* In my whole page i give border-box: box sizing to avoid overlapping gaps when i use padding. */
 * {
     box-sizing: border-box;
 }
@@ -8,6 +9,8 @@
     --light-purple: #C9D6F1;
     --dark-white: #e2ebf3;
     --background-color: #f2f5f8;
+    --white: #ffffff;
+
 }
 
 /*For body part I set the general properties I will use for the whole website*/
@@ -59,7 +62,7 @@ nav {
 
 }
 
-/*For texts in navbar i remove the bottom line like that*/
+/*For texts in navbar I remove the bottom line like that*/
 
 a {
     text-decoration: none;
@@ -83,7 +86,7 @@ main .main-body-area {
 
 
 /*stocked-market*/
-
+/* I used flex to stabilize its position */
 section#stocked-market {
     flex: 1;
 
@@ -111,16 +114,14 @@ section#stocked-market .market-item .market-item-sale {
 }
 
 /*news-body*/
-
+/* In my news body section i give flex:2 because I want this section to be bigger than the others. */
 section#news-body {
-    /* background-color: var(--light-prple); */
     flex: 2;
     padding-left: 16px;
     padding-bottom: 16px;
     border-style: ridge;
     border-color: var(--light-blue);
     border-radius: 12px;
-    overflow-y: scroll;
 }
 
 section#news-body button {
@@ -135,9 +136,14 @@ section#news-body button {
     margin: 10px 4px;
 }
 
+section#news-body .form .form-button {
+    background-color: var(--light-purple);
+    border-radius: 12px;
+    border-color: var(--light-blue);
+    height: 28px;
+    width: 147px;
 
-
-
+}
 
 
 /*User and applications*/
@@ -174,13 +180,10 @@ section#user-and-applications .user button {
 
 
 
-
-
 section#user-and-applications .user img {
     max-height: 100px;
     padding-right: 16px;
 }
-
 
 section#user-and-applications .application-item {
     border-style: solid;
@@ -194,17 +197,18 @@ section#user-and-applications .application-item {
 
 }
 
-
 section#user-and-applications .application-item img {
     max-height: 100px;
     padding: 10px 30px 0px 0px;
 
 }
 
+section#user-and-applications .application-item p {
+    padding-right: 32px;
+
+}
 
 /*Products and Services*/
-
-
 
 section#products-and-services .services-body {
     margin-top: 24px;
