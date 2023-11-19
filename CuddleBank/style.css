@@ -236,3 +236,12 @@ section#products-and-services .services-item img {
     border-top-right-radius: 16px;
 
 }
+
+/* Footer style  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
