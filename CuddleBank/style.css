@@ -86,7 +86,7 @@ main .main-body-area {
 
 
 /*stocked-market*/
-/* I used flex to stabilize its position */
+/* I used flex to stabilize section's position */
 section#stocked-market {
     flex: 1;
 
