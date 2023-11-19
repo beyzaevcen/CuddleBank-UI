@@ -2,24 +2,30 @@
     box-sizing: border-box;
 }
 
+/*Colors for my website */
 :root {
-    --light-prple: #F1E3EE;
     --light-blue: #DEF4FF;
+    --light-purple: #C9D6F1;
     --dark-white: #e2ebf3;
+    --background-color: #f2f5f8;
 }
 
-
+/*For body part I set the general properties I will use for the whole website*/
 
 body {
     font-size: 15px;
     line-height: 1.5;
+    background-color: var(--background-color);
+
 }
+
+/*I gave margin for my all-encompassing div*/
 
 .container {
     margin-top: 16px;
-    width: 96%;
     margin-left: 36px;
     margin-right: 36px;
+
 }
 
 
@@ -53,7 +59,7 @@ nav {
 
 }
 
-
+/*For texts in navbar i remove the bottom line like that*/
 
 a {
     text-decoration: none;
@@ -64,10 +70,8 @@ a {
 /*Main*/
 
 main {
-    margin-top: 72px;
+    margin-top: 48px;
     gap: 24px;
-
-
 }
 
 main .main-body-area {
@@ -76,6 +80,7 @@ main .main-body-area {
     gap: 36px;
     /* height: 100vh; */
 }
+
 
 /*stocked-market*/
 
@@ -113,14 +118,15 @@ section#news-body {
     padding-left: 16px;
     padding-bottom: 16px;
     border-style: ridge;
-    border-color: var(--light-prple);
+    border-color: var(--light-blue);
     border-radius: 12px;
+    overflow-y: scroll;
 }
 
 section#news-body button {
-    background-color: var(--light-prple);
+    background-color: var(--light-blue);
     border-radius: 12px;
-    border-color: var(--light-prple);
+    border-color: var(--light-blue);
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
@@ -130,39 +136,99 @@ section#news-body button {
 }
 
 
-/*Applications*/
 
-section#applications {
+
+
+
+/*User and applications*/
+
+section#user-and-applications {
     flex: 1
 }
 
-section#applications .application-item {
+section#user-and-applications .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+section#user-and-applications .user .user-profile {
+    display: flex;
+    flex-direction: row;
+
+}
+
+section#user-and-applications .user button {
+    background-color: var(--light-purple);
+    border-radius: 12px;
+    border-color: var(--light-purple);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 32px;
+
+}
+
+
+
+
+
+section#user-and-applications .user img {
+    max-height: 100px;
+    padding-right: 16px;
+}
+
+
+section#user-and-applications .application-item {
     border-style: solid;
     border-color: var(--dark-white);
-
+    border-radius: 16px;
     display: flex;
     text-align: center;
     align-items: center;
     margin-bottom: 16px;
+    background-color: white;
 
 }
 
 
-section#applications .application-item img {
+section#user-and-applications .application-item img {
     max-height: 100px;
+    padding: 10px 30px 0px 0px;
 
 }
 
-section#applications .application-item p {
-    padding-left: 16px;
+
+/*Products and Services*/
+
+
+
+section#products-and-services .services-body {
+    margin-top: 24px;
+    padding: 16px 0px 16px;
+    gap: 120px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
+section#products-and-services .services-body .services-item {
+    border-style: solid;
+    border-color: var(--dark-white);
+    border-radius: 16px;
+    background-color: white;
 
+}
 
-
-section#products-and-services {
-    grid-area: product-services;
-
-
+section#products-and-services .services-item img {
+    max-height: 160px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 
 }

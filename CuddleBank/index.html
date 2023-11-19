@@ -12,13 +12,14 @@
 </head>
 
 <body>
+    <!-- In my body area I wrapped everything in with div for easier styling -->
     <div class="container">
+        <!-- Firstly, I created header part with navbar. -->
         <header>
             <div class="title">
                 <h1 class="name">
                     CuddleBank
                 </h1>
-
                 <img class="logo" src="./assets/logo.svg" alt="Site logo">
             </div>
             <div class="navbar">
@@ -29,18 +30,19 @@
                     <a href="#">Blog</a>
                 </nav>
             </div>
-
-
             <div class="description">
                 <p>
                     At CuddleBank, we safeguard your finances with the same care and comfort as a warm embrace.
                 </p>
             </div>
         </header>
+        <!-- Header done. -->
 
         <main>
 
             <div class="main-body-area">
+                <!-- I used section because I could identify locations more easily.
+                    I also used div to better adjust the contents. -->
                 <section id="stocked-market">
                     <div>
                         <h2>Markets</h2>
@@ -49,7 +51,7 @@
                                 <img src="./assets/usd.png" alt="Usd image">
                                 <div class="market-item-name">
                                     <h5>USD</h5>
-                                    <p>Amerikan doları</p>
+                                    <p>Dollar</p>
                                 </div>
                             </div>
 
@@ -96,7 +98,7 @@
                                 <img src="./assets/gbp.png" alt="Usd image">
                                 <div class="market-item-name">
                                     <h5>GBP</h5>
-                                    <p>British pound</p>
+                                    <p>Pound</p>
                                 </div>
                             </div>
 
@@ -176,10 +178,10 @@
                         </div>
 
                         <div class="news-item">
-                            <h2 class="welcome-body-title">Welcome to CuddleBank: Your Financial Home</h2>
-                            <p>Step into CuddleBank, where a warm welcome awaits you, offering unparalleled financial
-                                services
-                                tailored to meet your needs and secure your future.</p>
+                            <h2 class="welcome-body-title">Let your gold be valued in the CuddleBank!</h2>
+                            <p>Experience the warmth of our exclusive CuddleBank program, where your gold isn't just a
+                                commodity; it's cherished and valued through personalized care and exceptional financial
+                                services tailored to your needs.</p>
                             <button>
                                 Detailed Information
                             </button>
@@ -198,29 +200,71 @@
                     </div>
 
                 </section>
-                <section id="applications">
+                <section id="user-and-applications">
+                    <div class="user">
+
+                        <div class="user-profile">
+                            <img src="./assets/user.png" alt="User profile">
+                            <div class="user-name">
+                                <h4>Welcome 👋🏻</h4>
+                                <p>Nermin Beyzanur Evcen</p>
+                            </div>
+
+                        </div>
+                        <button>Personal Account</button>
+
+                    </div>
+                    <hr>
                     <h2>Applications</h2>
                     <p>With the quick application, you can apply for the product you need in seconds.</p>
                     <div class="application-item">
-                        <img src="./assets/women.png" alt="Application png">
+                        <img src="./assets/card.png" alt="Application png">
                         <p>I want to apply for the super limit.</p>
                     </div>
                     <div class="application-item">
-                        <img src="./assets/women.png" alt="Application png">
-                        <p>I want to apply for the super limit.</p>
-                    </div>
-                    <div class="application-item">
-                        <img src="./assets/women.png" alt="Application png">
-                        <p>I want to apply for the super limit.</p>
+                        <img src="./assets/card.png" alt="Application png">
+                        <p>I want to get a credit card.</p>
                     </div>
 
                 </section>
             </div>
 
             <section id="products-and-services">
-                <div>
-                    <p>vkjsfk</p>
+                <h2>Products and Services</h2>
+                <div class="services-body">
+                    <a
+                        href="https://www.tbb.org.tr/tr/faaliyetler/teknoloji-ve-odeme-sistemleri/dijital-bankacilik/4558">
+                        <div class="services-item">
+                            <img src="./assets/applicaton.png" alt="">
+                            <p>Digital banking</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tbb.org.tr/tr/bankacilik/arastirma-ve-yayinlar/3">
+                        <div class="services-item">
+                            <img src="./assets/research.jpeg" alt="">
+                            <p>Research and publications</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.tbb.org.tr/tr/bankacilik/banka-ve-sektor-bilgileri/banka-bilgileri/bankalar/64">
+                        <div class="services-item">
+                            <img src="./assets/bankinfo.jpeg" alt="">
+                            <p>Bank information</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tbb.org.tr/tr/faaliyetler/teknoloji-ve-odeme-sistemleri/4557">
+                        <div class="services-item">
+                            <img src="./assets/paymentsystem.jpeg" alt="">
+                            <p>Technology and payment systems</p>
+                        </div>
+                    </a>
+
+
+
+
                 </div>
+
+
             </section>
 
         </main>
