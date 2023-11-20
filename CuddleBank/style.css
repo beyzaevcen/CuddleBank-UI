@@ -1,5 +1,5 @@
 /* Nermin Beyzanur Evcen
-20070915 */
+200709015 */
 
 /* In my whole page i give border-box: box sizing to avoid overlapping gaps when i use padding. */
 * {
@@ -119,6 +119,7 @@ section#stocked-market .market-item .market-item-sale {
 }
 
 /*news-body*/
+
 /* In my news body section i give flex:2 because I want this section to be bigger than the others. */
 section#news-body {
     flex: 2;
@@ -127,8 +128,6 @@ section#news-body {
     border-style: ridge;
     border-color: var(--light-blue);
     border-radius: 12px;
-
-
 }
 
 section#news-body button {
@@ -159,6 +158,8 @@ section#user-and-applications {
     flex: 1
 }
 
+/* For user part i give flex and make direction column */
+
 section#user-and-applications .user {
     display: flex;
     flex-direction: column;
@@ -166,11 +167,14 @@ section#user-and-applications .user {
     margin-bottom: 32px;
 }
 
+/* For user profile and name i give flex and make firection row */
 section#user-and-applications .user .user-profile {
     display: flex;
     flex-direction: row;
 
 }
+
+/* User ptofile button styling */
 
 section#user-and-applications .user button {
     background-color: var(--light-purple);
@@ -192,6 +196,7 @@ section#user-and-applications .user img {
     padding-right: 16px;
 }
 
+/* Application items style */
 section#user-and-applications .application-item {
     border-style: solid;
     border-color: var(--dark-white);
@@ -217,6 +222,7 @@ section#user-and-applications .application-item p {
 
 /*Products and Services*/
 
+/* For services body i give a flex and make directio row */
 section#products-and-services .services-body {
     margin-top: 24px;
     padding: 16px 0px 16px;
@@ -229,6 +235,7 @@ section#products-and-services .services-body {
     margin-bottom: 16px;
 }
 
+/* Styling for my products and services items  */
 section#products-and-services .services-body .services-item {
     border-style: solid;
     border-color: var(--dark-white);
@@ -236,6 +243,8 @@ section#products-and-services .services-body .services-item {
     background-color: white;
 
 }
+
+/* In my products and services section i give a style for every image i use */
 
 section#products-and-services .services-item img {
     max-height: 160px;
@@ -259,24 +268,23 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 36px;
-        /* height: 100vh; */
     }
 
-    @media only screen and (max-width: 750px) {
-        section#products-and-services .services-body {
-            margin-top: 24px;
-            padding: 16px 0px 16px;
-            gap: 120px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 16px;
-        }
 
-        body {
-            font-size: 10px;
-        }
+    section#products-and-services .services-body {
+        margin-top: 24px;
+        padding: 16px 0px 16px;
+        gap: 120px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
     }
+
+    body {
+        font-size: 10px;
+    }
+
 }
