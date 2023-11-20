@@ -1,3 +1,6 @@
+/* Nermin Beyzanur Evcen
+20070915 */
+
 /* In my whole page i give border-box: box sizing to avoid overlapping gaps when i use padding. */
 * {
     box-sizing: border-box;
@@ -25,7 +28,7 @@ body {
 /*I gave margin for my all-encompassing div*/
 
 .container {
-    margin-top: 16px;
+    margin-top: 1rem;
     margin-left: 36px;
     margin-right: 36px;
 
@@ -85,6 +88,8 @@ main .main-body-area {
 }
 
 
+
+
 /*stocked-market*/
 /* I used flex to stabilize section's position */
 section#stocked-market {
@@ -122,6 +127,8 @@ section#news-body {
     border-style: ridge;
     border-color: var(--light-blue);
     border-radius: 12px;
+
+
 }
 
 section#news-body button {
@@ -244,4 +251,32 @@ footer {
     justify-content: center;
     margin-bottom: 36px;
     margin-top: 36px;
+}
+
+/* For making responsive this page i use media query */
+@media only screen and (max-width: 750px) {
+    main .main-body-area {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        /* height: 100vh; */
+    }
+
+    @media only screen and (max-width: 750px) {
+        section#products-and-services .services-body {
+            margin-top: 24px;
+            padding: 16px 0px 16px;
+            gap: 120px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        body {
+            font-size: 10px;
+        }
+    }
 }
