@@ -1,4 +1,4 @@
-# CuddleBank Web Midterm Project
+# CuddleBank UI
 
 GitHub link: https://github.com/beyzaevcen/Web-Midterm
 
