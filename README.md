@@ -2,7 +2,7 @@
 
 GitHub link: https://github.com/beyzaevcen/Web-Midterm
 
-Welcome to the CuddleBank Web Midterm Project repository! This project hosts the source code for our bank's webpage, designed to offer visitors a glimpse into our services, values, and commitment to providing top-notch financial solutions.
+Welcome to the CuddleBank repository! This project hosts the source code for our bank's webpage, designed to offer visitors a glimpse into our services, values, and commitment to providing top-notch financial solutions.
 
 At CuddleBank, we safeguard your finances with the same care and comfort as a warm embrace.
 
