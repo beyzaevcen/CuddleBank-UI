@@ -1,6 +1,7 @@
 # CuddleBank UI
-
+Web Midterm Project
 GitHub link: https://github.com/beyzaevcen/Web-Midterm
+
 
 Welcome to the CuddleBank repository! This project hosts the source code for our bank's webpage, designed to offer visitors a glimpse into our services, values, and commitment to providing top-notch financial solutions.
 
